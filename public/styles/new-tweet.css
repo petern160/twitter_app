@@ -1,0 +1,27 @@
+
+
+.textarea{
+    width: 100%;
+    
+}
+
+
+.new-tweet{
+    background-color: #DCDCDC;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.title-form {
+    
+    border-bottom: 2px solid; 
+    text-align: left;
+
+}
+
+.button {
+    margin-right: 285px;
+}
