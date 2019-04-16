@@ -82,8 +82,8 @@
   .tweetsmade:hover #icon  {
     opacity: 1;
   }
-  .daycount:hover .edit {
-	display: block;
+  .daycount {
+    padding-bottom:10px
 }
 .avatar {
     /* vertical-align: middle; */
