@@ -22,6 +22,82 @@
 
 }
 
+.pic-back{
+    background-color: grey;
+}
 .button {
     margin-right: 285px;
 }
+
+.actual-content{
+    padding: 15px 0;
+  }
+/* tweet boxes */
+.tweetsmade{
+    width: 100%;
+    margin-top: 102px;
+    border: 1px solid black; 
+    border-radius: 25px;
+    opacity: .5;
+}
+.twitterhandle{
+    text-align:left;
+    float:left;
+
+}
+.twitteruser{
+    float:right;
+}
+/* .tweetsmade:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  } */
+.tweetcontext{
+    margin-top:55px;
+    text-align: left;
+    border-top: 2px solid; 
+    font-size: 25px;
+}
+
+.tweetbackground{
+   
+    background-color:#ECE5E5;
+    overflow: hidden;
+    border-radius: 25px;
+} 
+.tweetsmade:hover { 
+    opacity: 1;
+    
+  }
+
+  
+  #icon {
+    opacity: 0;
+  }
+  
+  .tweetsmade:hover #icon  {
+    opacity: 1;
+  }
+  .daycount:hover .edit {
+	display: block;
+}
+.avatar {
+    /* vertical-align: middle; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left; 
+   
+  }
+
+  .daycount{
+    border-top: thick double #778899;
+      margin-top: 50px;
+      text-align: left;
+  }
+
+  
