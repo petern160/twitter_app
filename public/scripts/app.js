@@ -5,7 +5,6 @@
  */
 
 
-
   $(function(){
 
     function loadTweets() {
@@ -17,9 +16,7 @@
    loadTweets();
 
 
-  
-
-  formValidation()
+ 
       function renderTweets(tweets){
           for (let key in tweets){
             let $tweet = createTweetElement(tweets[key]);
