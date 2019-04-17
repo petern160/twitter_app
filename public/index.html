@@ -33,6 +33,10 @@
 
   <!-- character counter -->
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- ajax files -->
+  <script type="text/javascript" src="/scripts/ajax.js">  </script>
 </head>
 
 <body>
@@ -45,12 +49,12 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-
+    
     <section class="new-tweet">
       <h2 class="title-form">Compose Tweet</h2>
-      <form class="form" method="POST" action='/tweets' Content-Type: application/x-www-form-urlencoded> <textarea
-        id="inputcount" class="textarea" name="text" placeholder="What are you humming about?"></textarea>
-        <input type="submit" class="button" value="Tweet">
+      <form id="tweetform" class="form" method="POST" action='/tweets' Content-Type: application/x-www-form-urlencoded> 
+        <textarea id="inputcount" class="textarea" name="text" placeholder="What are you humming about?"></textarea>
+        <input id="tweetbutton" type="submit" class="button" value="Tweet">
         <span id="count" class="counter"></span>
 
       </form>
