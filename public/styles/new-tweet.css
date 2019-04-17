@@ -92,7 +92,10 @@
     float: left; 
    
   }
-
+  span#count {
+    float: right;
+    margin-top: -20px;
+}
   .daycount{
     border-top: thick double #778899;
       margin-top: 50px;

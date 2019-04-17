@@ -57,6 +57,7 @@
     <section id="composebody" class="new-tweet">
       <h2 class="title-form">Compose Tweet</h2>
       <form id="tweetform" class="form" method="POST" action='/tweets' Content-Type: application/x-www-form-urlencoded> 
+        <div class="error-alert">please do not leave it empty or longer then 140 characters </div>
         <textarea id="inputcount" class="textarea" name="text" placeholder="What are you humming about?"></textarea>
         <input id="tweetbutton" type="submit" class="button" value="Tweet">
         <span id="count" class="counter"></span>

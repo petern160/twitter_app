@@ -25,7 +25,10 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
+.error-alert{
+  background-color: red;
+  display:none;
+}
  .container {
    overflow:hidden;
    margin: auto;

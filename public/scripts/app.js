@@ -94,9 +94,9 @@
           event.preventDefault();
           let inputLength = $('#inputcount').val().length;
           if (inputLength === 0 || inputLength === null){
-            alert("tweet cannot be empty");
+            $('.error-alert').show()
           }else if (inputLength > 140) {
-            alert('you cannot have more then 140 letters')
+            $('.error-alert').show()
           }else{
             console.log('Button works');
             let $formData = $form.serialize();
