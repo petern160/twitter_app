@@ -1,5 +1,4 @@
 
-
 .textarea{
     width: 100%;
     
@@ -99,5 +98,38 @@
       margin-top: 50px;
       text-align: left;
   }
+
+  /* .compose{
+    border-radius: 25px;
+    border: b2px solid #ffffff;
+    border-color: red;
+    background-color: white;
+    font-size: 20px
+  } */
+
+  .compose{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border-radius: 25px;
+    background-size: 300% 100%;
+    float:right
+   
+}
+
+.compose:hover {
+    background-position: 100% 0;
+   
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+  
 
   
