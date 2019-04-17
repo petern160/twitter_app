@@ -8,7 +8,20 @@
 
   $(function(){
 
+    function loadTweets () {
+      var $form = $('#tweetform');
+      $form.on('submit', function () {
+        event.preventDefault();
+        console.log('GET REQUEST');
+        let $formData = $form.serialize();
+        console.log($formData)
+        $.ajax('/tweets', { method: 'GET', data: $formData })
+        .then(function (event) {
+          console.log('Success: ', event);
   
+        });
+      });
+    }
 
       function renderTweets(tweets){
           for (let key in tweets){
