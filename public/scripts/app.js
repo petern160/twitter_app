@@ -89,6 +89,8 @@ $(function () {
       $.ajax('/tweets', { method: 'POST',
         data: $formData,
         success: function () {
+          $('#inputcount').val('')
+          $('#count').val('140')
           loadTweets()
         }
       })
