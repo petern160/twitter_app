@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -25,10 +26,14 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ /* jquery error styling */
 .error-alert{
   background-color: red;
   display:none;
 }
+
+ /* container styling */
  .container {
    overflow:hidden;
    margin: auto;
@@ -42,18 +47,3 @@ body {
    
  }
 
- /*
- .wrapper {
-    width:100%;
-    position:fixed;
-    z-index:10;
-    background:inherit;
-}
-
-.bottom-wrapper {
-    width:100%;
-    padding-top:92px;
-    z-index:5;
-    overflow:auto;
-}
- */

@@ -57,7 +57,7 @@
   } */
 .tweetcontext{
     margin-top:55px;
-    text-align: left;
+    text-align: justify;
     border-top: 2px solid; 
     font-size: 25px;
 }
@@ -76,6 +76,7 @@
   
   #icon {
     opacity: 0;
+    float: right;
   }
   
   .tweetsmade:hover #icon  {
@@ -102,13 +103,7 @@
       text-align: left;
   }
 
-  /* .compose{
-    border-radius: 25px;
-    border: b2px solid #ffffff;
-    border-color: red;
-    background-color: white;
-    font-size: 20px
-  } */
+  
 
   .compose{
     width: 200px;
