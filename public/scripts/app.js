@@ -19,9 +19,11 @@
     }
 
     function loadTweets() {
+      console.log('is this here')
       $.ajax('/tweets', { method: 'GET' })
-      .then(function (event) {
-        renderTweets(event);
+      .then(function (data) {
+        console.log('test', data)
+        renderTweets(data);
       });
    }
   
@@ -35,6 +37,7 @@
  
       function renderTweets(tweets){
           for (let key in tweets){
+            console.log('tweet', tweets[key])
             let $tweet = createTweetElement(tweets[key]);
             $('#tweetload').prepend($tweet)
           }
@@ -117,8 +120,7 @@
         });
       // });
     
-      
-     loadTweets();
+loadTweets()
      
       
 });
