@@ -1,0 +1,90 @@
+ /* styling for when a new tweet is made on browser */
+
+.tweetsmade{
+    width: 100%;
+    margin-top: 102px;
+    border: 1px solid black; 
+    border-radius: 25px;
+    opacity: .5;
+}
+.twitterhandle{
+    text-align:left;
+    float:left;
+
+}
+.twitteruser{
+    float:right;
+}
+
+.tweetcontext{
+    margin-top:55px;
+    text-align: justify;
+    border-top: 2px solid; 
+    font-size: 25px;
+}
+
+.tweetbackground{
+   
+    background-color:#ECE5E5;
+    overflow: hidden;
+    border-radius: 25px;
+} 
+.tweetsmade:hover { 
+    opacity: 1;
+    
+  }
+
+  
+  #icon {
+    opacity: 0;
+    float: right;
+  }
+  
+  .tweetsmade:hover #icon  {
+    opacity: 1;
+  }
+  .daycount {
+    padding-bottom:10px
+}
+.avatar {
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left; 
+   
+  }
+  span#count {
+    float: right;
+    margin-top: -20px;
+}
+  .daycount{
+    border-top: thick double #778899;
+      margin-top: 50px;
+      text-align: left;
+  }
+
+  
+
+  .compose{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border-radius: 25px;
+    background-size: 300% 100%;
+    float:right
+   
+}
+
+.compose:hover {
+    background-position: 100% 0;
+   
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}

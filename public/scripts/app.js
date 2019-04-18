@@ -32,30 +32,7 @@ $(function () {
     }
   }
 
-  // time in days hour or seconds function
-  function convertMS (milliseconds) {
-    var day, hour, minute, seconds
-    seconds = Math.floor(milliseconds / 1000)
-    minute = Math.floor(seconds / 60)
-    seconds = seconds % 60
-    hour = Math.floor(minute / 60)
-    minute = minute % 60
-    day = Math.floor(hour / 24)
-    hour = hour % 24
-    return {
-      day: day,
-      hour: hour,
-      minute: minute,
-      seconds: seconds
-    }
-  }
-
   function createTweetElement (tweet) {
-    // convert milliseconds and get the difference
-    const dateNow = Date.now()
-    const createdAt = tweet.created_at
-    const timeSince = dateNow - createdAt
-    const difference = convertMS(timeSince)
 
     // displaying tweet data with all the styles
     const section = $('<section>').addClass('tweets')
@@ -86,7 +63,8 @@ $(function () {
     h2.text(tweet.user.name)
     h3.text(tweet.user.handle)
 
-    pTwo.text(difference.day + ' days ago')
+    // gets time in hours minutes or year from moment script
+    pTwo.text(moment(tweet.created_at).fromNow())
     pTwo.append(iOne)
     pTwo.append(iTwo)
     pTwo.append(iThree)
