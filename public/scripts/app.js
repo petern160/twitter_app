@@ -28,12 +28,12 @@
    }
   
 
-   function escape(str) {
-    var div = document.createElement('div');
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
-  }
-  const safeHTML = `<p>${escape(inputcount)}</p>`;
+  //  function escape(str) {
+  //   var div = document.createElement('div');
+  //   div.appendChild(document.createTextNode(str));
+  //   return div.innerHTML;
+  // }
+  // const safeHTML = `<p>${escape(inputcount)}</p>`;
  
       function renderTweets(tweets){
           for (let key in tweets){
@@ -43,8 +43,29 @@
           }
       }
 
+      function convertMS( milliseconds ) {
+        var day, hour, minute, seconds;
+        seconds = Math.floor(milliseconds / 1000);
+        minute = Math.floor(seconds / 60);
+        seconds = seconds % 60;
+        hour = Math.floor(minute / 60);
+        minute = minute % 60;
+        day = Math.floor(hour / 24);
+        hour = hour % 24;
+        return {
+            day: day,
+            hour: hour,
+            minute: minute,
+            seconds: seconds
+        };
+    }
       
       function createTweetElement(tweet) {
+        const dateNow = Date.now()
+        const createdAt = tweet.created_at
+        const timeSince = dateNow - createdAt
+        const difference = convertMS(timeSince)
+
         const section = $('<section>').addClass("tweets")
         const div1 = $('<div>').addClass("tweetsmade")
         const div2 = $('<div>').addClass("tweetbackground")
@@ -81,7 +102,8 @@
         img.attr('src', tweet.user.avatars.small)
         h2.text(tweet.user.name)
         h3.text(tweet.user.handle)
-        pTwo.text(tweet.created_at)
+        
+        pTwo.text(difference.day + ' days ago')
         pTwo.append(iOne)
         pTwo.append(iTwo)
         pTwo.append(iThree)
